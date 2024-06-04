@@ -1,0 +1,235 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+}
+
+html {
+  font-size: 62.5%; /*Fonte de 10px*/
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2e2e2e;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 15px;
+  background: #f2f2f2;
+}
+
+.container img {
+  width: 140px;
+  height: 140px;
+}
+
+.container h1 {
+  font-size: 4rem;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.container h1 span {
+  position: relative;
+  bottom: -25px;
+  color: #208db8;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.container .container-texto {
+  margin-top: 35px;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.container .container-texto h3 {
+  text-align: center;
+}
+
+.container .container-texto .btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  gap: 70px
+}
+
+.container .container-texto .btns .btn {
+  font-size: 1.8rem;
+  padding: 15px 30px;
+  text-decoration: none;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.container .container-texto .btns button:nth-child(1).btn {
+  background: #d9c359;
+  color: #2e2e2e;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.container .container-texto .btns button:nth-child(1).btn::before {
+  content: "";
+  width: 150%;
+  height: 60%;
+  background: #28b0e6;
+  position: absolute;
+  border-radius: 30px;
+  top: 0;
+  left: 100%;
+  z-index:-1;
+  transition: .5s;
+}
+
+.container .container-texto .btns button:nth-child(1).btn:hover::before {
+  left: -10%;
+}
+
+.container .container-texto .btns button:nth-child(1).btn::after {
+  content: "";
+  width: 150%;
+  height: 60%;
+  background: #28b0e6;
+  position: absolute;
+  border-radius: 30px;
+  bottom: 0;
+  right: 100%;
+  z-index:-1;
+  transition: .5s;
+}
+
+.container .container-texto .btns button:nth-child(1).btn:hover::after {
+  right: -10%;
+}
+
+.container .container-texto .btns button:nth-child(1):active::before, .container .container-texto .btns button:nth-child(1):active::after {
+  background: #0d85b5;
+}
+
+.container .container-texto .btns button:nth-child(2) {
+  background: #208db8;
+  color: black;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.container .container-texto .btns button:nth-child(2)::before {
+  content: "";
+  width: 70%;
+  height: 150%;
+  background: #efcd25;
+  position: absolute;
+  border-radius: 30px;
+  bottom: 100%;
+  left: -10px;
+  z-index:-1;
+  transition: .5s;
+}
+
+.container .container-texto .btns button:nth-child(2):hover::before {
+  bottom: -20%;
+}
+
+.container .container-texto .btns button:nth-child(2)::after {
+  content: "";
+  width: 70%;
+  height: 150%;
+  background: #efcd25;
+  position: absolute;
+  border-radius: 30px;
+  top: 100%;
+  right: -10px;
+  z-index:-1;
+  transition: .5s;
+}
+
+.container .container-texto .btns button:nth-child(2):hover::after {
+  top: -15px;
+}
+
+.container .container-texto .btns button:nth-child(2):active::before, .container .container-texto .btns button:nth-child(2):active::after {
+  background: #d5b61a;
+}
+
+/*==================
+  PERGUNTA NOME
+===================*/
+
+.convidado {
+  width:400px;
+  height:170px;
+  background: #f2f2f2;
+  padding: 15px;
+  border-radius: 15px
+}
+
+.titulo-form {
+  font-size: 25px;  
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.input-nome{
+  border: none;
+  border-radius: 10px;
+  background: rgba(217, 195, 89, 0.5);
+}
+
+.input-nome::placeholder{
+  font-size: 20px;
+}
+
+.btn-avancar{
+  border:none;
+  border-radius: 15px;
+  background: #208db8;
+  transition: 0.5s;
+}
+
+.btn-avancar:hover{
+  cursor: pointer;
+  background: #1e7394;
+}
+
+.convidado form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  font-size: 4rem;
+}
+
+.convidado form label {
+  text-align: center;
+}
+
+.convidado form #nome {
+  width: 80%;
+  padding: 5px;
+  font-size: 2.5rem;
+}
+
+.convidado form input:last-child {
+  font-size: 2.5rem;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 3px
+}
+/* d9c359 */

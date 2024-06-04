@@ -1,0 +1,202 @@
+
+.indicador-movimento {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  left: 500px;
+  display: flex;
+  flex-direction: column;
+  transform: rotate(10deg) skewX(-40deg);
+  scale: .8;
+  text-align: center;
+}
+
+.indicador-movimento span{
+   font-size: 1.5rem;
+  color: #2e2e2e;
+  position: relative;
+  top: 10px;
+  left: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  
+}
+
+.indicador-movimento .seta-cima {
+  width:33%;
+  height: 50%;
+  position: relative;
+  left: calc(33% + 20px);
+  margin-bottom: 20px;
+}
+
+.setas{
+  box-shadow: inset 0px -30px 15px #aaaaaa22;
+  width:33%;
+  height: 100%;
+  background: #2e2e2e;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+
+.tecla{
+  width: 100%;
+  height: 100%;
+  background:#f2f2f2;
+  border:2px solid #2e2e2e;
+  border-radius: 20px;
+  transform: translateY(-10px) translateX(-10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 15px -10px 15px #00000099, inset 0px -20px 12px #aaaaaa22;
+  
+}
+
+.tecla svg{
+  scale:1.5;
+  color: #2e2e2e;
+}
+
+.indicador-movimento .container-setas {
+  width: calc(100% + 40px);
+  height: 50%;
+  display: flex;
+  gap:20px;
+}
+
+
+/* ================================  */
+
+.indicador-interacao{
+  position: absolute;
+  transform: rotate(10deg) skewX(-40deg);
+  
+}
+
+.seta-m{
+  position: absolute;
+  top: 150px; 
+  width: 50px;
+  height: 40px;
+  left: 650px; 
+  background: #2e2e2e;
+  border-radius: 10px;
+  box-shadow: inset 0px -30px 15px #aaaaaa22;
+  
+}
+
+.tecla-m{
+  width: 100%;
+  height: 100%;
+  transform: translateY(-7px) translateX(-10px);
+  background: blue;
+  border-radius: 10px;
+background:#f2f2f2;
+  border:2px solid #2e2e2e;
+  box-shadow: 15px -10px 15px #00000099, inset 0px -20px 12px #aaaaaa22;
+  text-align: center;
+  line-height:35px;
+}
+
+.seta-m span{
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #2e2e2e;
+  position: relative;
+  top: 10px;
+}
+
+
+.seta-n{
+  position: absolute;
+  top: 150px; 
+  width: 50px;
+  height: 40px;
+  left: 780px; 
+  background: #2e2e2e;
+  border-radius: 10px;
+  box-shadow: inset 0px -30px 15px #aaaaaa22;
+    text-align: center;
+}
+
+.tecla-n{
+  width: 100%;
+  height: 100%;
+  transform: translateY(-7px) translateX(-10px);
+  background: blue;
+  border-radius: 10px;
+background:#f2f2f2;
+  border:2px solid #2e2e2e;
+  box-shadow: 15px -10px 15px #00000099, inset 0px -20px 12px #aaaaaa22;
+
+  line-height:35px;
+}
+
+.seta-n span{
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #2e2e2e;
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+
+.seta-enter{
+  position: absolute;
+  top: 60px; 
+  width: 80px;
+  height: 120px;
+  left: 950px; 
+  background: #2e2e2e;
+  border-radius: 10px;
+    text-align: center;
+  box-shadow: 1px -10px 15px #00000099, inset 0px -20px 12px #aaaaaa22;
+  
+}
+
+.tecla-enter{
+  width: 100%;
+  height: 80px;
+  transform: translateY(-7px) translateX(-10px);
+  background: blue;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+background:#f2f2f2;
+  border-bottom:2px solid #2e2e2e;
+  border-left:2px solid #2e2e2e;
+  border-right:2px solid #2e2e2e;
+  line-height:35px;
+}
+
+.seta-enter .part-2{
+  position: relative;
+  left: -30px;
+  top:-4px;
+  border:2px solid #2e2e2e;
+  background:#f2f2f2;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  content: "";
+  width: 100px;
+  height: 40px;
+
+}
+
+.seta-enter span{
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #2e2e2e;
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+@media (max-width:768px){
+    .indicador-movimento{
+    display:none;
+  }
+}

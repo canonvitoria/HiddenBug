@@ -1,0 +1,196 @@
+.eixo-elements{
+  position: absolute;
+  background: yellow;
+  transition: var(--transicao);
+}
+
+.elements{
+  position: relative;  
+}
+
+.tech{
+  position: absolute;
+
+}
+
+.tech img{
+  position: absolute;
+}
+
+.html{
+  top: 320px;
+  left: 925px;
+  z-index:10;
+}
+
+.css{
+  left: 2830px;
+  top:570px;
+  z-index:20;
+}
+
+.javascript{
+  left: 4476px;
+  top:267px;
+  z-index:10;
+}
+
+.react{
+  left: 3835px;
+  top: 1280px;
+  z-index:40;
+}
+
+.python{
+  position: absolute;
+  z-index: 50;
+}
+
+.php{
+  top:1170px;
+  left:1670px;
+  z-index:30;
+}
+
+.mysql{
+  top:1780px;
+  left:620px;
+  z-index:50;
+}
+
+.python{
+  top:2010px;
+  left:2700px;
+  z-index:60;
+}
+
+.java{
+  top: 2240px;
+  left: 4540px;
+    z-index:70;
+}
+
+
+/* .foto img{
+  width: 300px;
+  height: 300px;
+} */
+
+.javascript img{
+  scale: .75;  
+  
+}
+
+.php img{
+  scale:1;
+}
+
+.mysql img{
+   scale: .9;
+}
+
+:is(.python, .java, .react) img{
+  scale: .5;
+}
+
+.react img{
+  background: #f2f2f299;
+  border-radius: 50%;
+}
+
+
+/*===========================  */
+
+
+
+.linguagens{
+  position: absolute;
+  top:100%;
+  filter: blur(1.5px);  
+  cursor: pointer;
+  transition: 1s;
+}
+
+
+.linguagens img{
+  position: relative;
+  top:0;
+  transition: .5s;
+
+}
+.linguagens:hover > img{
+  top:-4px;
+}
+.linguagem-5:hover > img{
+  top:-1.6px;
+}
+
+.linguagem-8:hover > img{
+  top:-1.1px;
+}
+
+.linguagem-1{
+  top:4%;
+  left: 14.25%;
+}
+
+.linguagem-2{
+  top:10%;
+  left: 46%;
+}
+
+.linguagem-3{
+  top:6%;
+  left: 76.5%;
+}
+
+.linguagem-3 img{
+  scale: 1.8;
+}
+
+.linguagem-4{
+  top:40.5%;
+  left: 65.25%;
+}
+
+.linguagem-4 img{
+  scale: 1.2;
+}
+
+.linguagem-4{
+  top:39.5%;
+  left: 65.25%;
+  scale: 1.1;
+}
+
+.linguagem-4 img{
+  background: #f2f2f299;
+  border-radius: 50%;
+}
+
+.linguagem-5{
+  top:35%;
+  left: 30.50%;
+  scale: 2.7;
+  filter: blur(.8px);
+}
+
+.linguagem-6{
+  top:53%;
+  left: 9.7%;
+  scale: 1.3;
+}
+
+
+.linguagem-7{
+  top:63.5%;
+  left: 46%;
+  scale: 1.3;
+}
+
+.linguagem-8{
+  top:70.5%;
+  left: 83%;
+  scale: 3.4;
+  filter: blur(.5px);
+}

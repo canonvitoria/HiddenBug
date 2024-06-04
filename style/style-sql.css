@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Merriweather+Sans:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  /*font size de 10px*/
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: black;
+  transition: .3s;
+}
+
+/*==================
+    NAVEGAÇÃO
+===================*/
+
+.navegacao {
+  width: 300px;
+  height: 100%;
+  background: #292929;
+  transition: .3s;
+  overflow: hidden;
+  color: #f2f2f2;
+}
+
+.navegacao .titulo {
+  width: 100%;
+  height: 20%;
+}
+
+.navegacao .titulo div {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+
+.navegacao .titulo div .logo-titulo {
+  justify-content: start;
+  align-items: center;
+  width: 80%;
+}
+
+.navegacao .titulo div .logo-titulo h2 {
+  font-size: 2.5rem;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.navegacao .titulo div .logo-titulo h2 span {
+  position: relative;
+  top: 15px;
+  color: #208db8;
+}
+
+.navegacao .titulo div .logo-titulo img {
+  height: 50px;
+  width: 50px;
+}
+
+.navegacao .titulo div svg {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: .7s;
+}
+
+.navegacao .titulo h1 {
+  height: 20%;
+  font-size: 2.8rem;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.navegacao .titulo hr {
+  width: 50%;
+  border-color: #d9c359;
+  margin-top: 10px;
+}
+
+.navegacao nav {
+  width: 100%;
+  height: 70%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-top: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+  gap: 25px;
+  position: relative;
+}
+
+.navegacao nav::-webkit-scrollbar {
+  background: #343232;
+  width: 5px;
+}
+
+.navegacao nav::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 30px;
+  box-shadow: 1px 1px 3px black;
+}
+
+.navegacao nav li {
+  width: 75%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding-left: 10px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.navegacao nav li:nth-child(1) {
+  color: black;
+}
+
+.navegacao nav li img {
+  width: 40px;
+  height: 30px;
+}
+
+.navegacao nav li.fundo {
+  background: #cdcdcd;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  transition: .2s;
+  z-index: 0;
+}
+
+.navegacao .black-mode {
+  height: 5%;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #8f8f8f;
+  border-radius: 20px;
+  margin: 10px auto 0 auto;
+  gap: 10px;
+  padding: 20px;
+  transition: .3s;
+}
+
+.navegacao .black-mode img {
+  height: 20px;
+  width: 20px;
+}
+
+.navegacao .black-mode img.lua {
+  transform: rotateZ(-15deg);
+}
+
+.navegacao .black-mode div.fundo-black {
+  width: 50px;
+  height: 20px;
+  background: white;
+  border: thin solid black;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.navegacao .black-mode .fundo-black div {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: black;
+  transform: translate(-50%, 0);
+  position: absolute;
+  left: 10px;
+  transition: .2s;
+}
+
+.navegacao .black-mode .sol {
+  scale: 1.3;
+}
+
+/*==================
+    CONTEUDOS
+===================*/
+
+.conteudos {
+  width: 80%;
+  height: 100%;
+}
+
+.conteudos .header-conteudo {
+  background: #2e2e2e;
+  color: #f2f2f2;
+  width: 100%;
+  height: 73px;
+  display: flex;
+  justify-content: space-between;
+  transition: .3s;
+}
+
+.conteudos .header-conteudo .titulo {
+  width: 230px;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 15px;
+  gap: 20px;
+  font-size: 1.6rem;
+  transition: .3s;
+}
+
+.conteudos .header-conteudo .titulo svg {
+  scale: 4;
+  display: none;
+  cursor: pointer;
+  transition: .7s;
+}
+
+.conteudos .header-conteudo .titulo img {
+  width: 80px;
+  height: 40px;
+}
+
+.conteudos img {
+  height: 50px;
+  width: 50px;
+}
+
+.conteudos .header-conteudo .perfil {
+  width: 270px;
+  height: 100%;
+  padding: 10px 60px;
+  display: flex;
+  justify-content: end;
+  transition: .3s;
+  position: relative;
+}
+
+.conteudos .header-conteudo .perfil .foto {
+  width: 50px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  right: 60px;
+  top: 15px;
+}
+
+.conteudos .header-conteudo .perfil .foto img {
+  width: 100%;
+  height: 100%;
+}
+
+.conteudos .header-conteudo .perfil input {
+  display: none;
+}
+
+.conteudos .header-conteudo .perfil svg {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+
+.conteudos .header-conteudo .perfil .btns {
+  display: none;
+}
+
+.conteudos .container-conteudo {
+  width: 100%;
+  height: calc(100% - 73px);
+  padding: 40px 0;
+  overflow-y: scroll;
+}
+
+.conteudos .container-conteudo::-webkit-scrollbar {
+  background: #343232;
+  width: 5px;
+}
+
+.conteudos .container-conteudo::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 30px;
+  box-shadow: 1px 1px 3px black;
+}
+
+.conteudos .container-conteudo .conteudo {
+  width: 65vw;
+  height: 38vw;
+  color: #f2f2f2;
+  margin: 0 auto;
+}
+
+.conteudos .container-conteudo .conteudo .titulos {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.conteudos .container-conteudo .conteudo .titulos .nome hr {
+  width: 80%;
+  border-color: #d9c359;
+}
+
+.conteudos .container-conteudo .conteudo .titulos .progressos {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudos .container-conteudo .conteudo .titulos .progressos .processo {
+  width: 80%;
+  height: 25%;
+  background: white;
+  border-radius: 20px;
+}
+
+.conteudos .container-conteudo .conteudo .titulos .progressos .processo div {
+  width: 25%;
+  height: 100%;
+  background: #afafaf;
+  border-radius: 20px;
+  text-align: end;
+}
+
+.conteudos .container-conteudo .conteudo .titulos .progressos .processo div h3 {
+  position: relative;
+  top: -25px;
+  left: 20px;
+  font-size: 2rem;
+}
+
+.conteudos .container-conteudo .conteudo .container-iframe {
+  width: 100%;
+  height: 75%;
+  margin: 10px 0;
+  border-radius: 15px;
+  position: relative;
+}
+
+.conteudos .container-conteudo .conteudo .container-iframe iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.conteudos .container-conteudo .conteudo .container-iframe .fundo-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000073;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.none {
+  display: none;
+}
+
+.conteudos .container-conteudo .conteudo .btn {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.conteudos .container-conteudo .conteudo .btn .img-prof {
+  height: 50px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.conteudos .container-conteudo .conteudo .btn .img-prof img {
+  width: 50px;
+  height: 50px;
+}
+
+.conteudos .container-conteudo .conteudo .btn .img-prof span {
+  font-size: 1.6rem;
+}
+
+.conteudos .container-conteudo .conteudo .btn #proximo {
+  background: #208cd8;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  transition: .5s;
+  cursor: pointer;
+  color: #f2f2f2;
+  font-size: 1.7rem;
+}
+
+.conteudos .container-conteudo .conteudo .btn #proximo:hover {
+  background: #135482;
+}
+
+.conteudos .container-conteudo .conteudo .btn #proximo:active {
+  background: #1868a2;
+}
+
+.conteudos .container-conteudo .conteudo .descricao {
+  width: 100%;
+  margin: 20px 0;
+  padding: 40px 0;
+}
+
+.conteudos .container-conteudo .conteudo .descricao h2 {
+  line-height: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.conteudos .container-conteudo .conteudo .descricao p {
+  font-size: 2rem;
+  text-indent: 50px;
+}
+
+/*==================
+    SEM NAVEGAÇÃO
+===================*/
+
+main.ativo .navegacao {
+  width: 0;
+}
+
+main.ativo .conteudos {
+  width: 100%;
+}
+
+/*=====================
+  PERFIL-ATIVO
+======================*/
+
+.conteudos .header-conteudo .perfil.ativo {
+  background: #2e2e2e;
+  height: 285px;
+  z-index: 10;
+  justify-content: center;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  transition: .3s;
+  position: relative;
+  top: 70px;
+}
+
+.conteudos .header-conteudo .perfil.ativo svg {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  position: absolute;
+  top: -50px;
+  right: 15px;
+}
+
+.conteudos .header-conteudo .perfil.ativo .foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: initial;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.conteudos .header-conteudo .perfil.ativo .foto img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.conteudos .header-conteudo .perfil.ativo .foto::after {
+  content: var(--nome);
+  font-size: 1.8rem;
+  margin-top: 10px;
+  transition: .3s;
+  position: absolute;
+  bottom: -25px;
+}
+
+.conteudos .header-conteudo .perfil.ativo .btns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.conteudos .header-conteudo .perfil.ativo .btns button {
+  width: 100%;
+  height: 50px; 
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.conteudos .header-conteudo .perfil.ativo .btns button:hover {
+  background: #208cd8;
+}
+
+.conteudos .header-conteudo .perfil.ativo .btns button:active {
+  background: #1f81c7;
+}
+
+/*=====================
+    DARK-MODE
+======================*/
+
+.modo main {
+  background: #ccc;
+}
+
+.modo .navegacao {
+  background: #f9f6f6;
+  color: black;
+}
+
+.modo .navegacao nav::-webkit-scrollbar {
+  background: #aca5a5;
+}
+
+.modo .navegacao nav::-webkit-scrollbar-thumb {
+  background: #c5c4c4;
+  box-shadow: 1px 1px 3px black;
+}
+
+.modo .navegacao .black-mode {
+  background: #cdcdcd;
+}
+
+.modo .navegacao .black-mode .fundo-black div {
+  left: 38px;
+}
+
+.modo .conteudos .header-conteudo {
+  background: #f2f2f2;
+}
+
+.modo .conteudos .header-conteudo .perfil svg {
+  color: black;
+}
+
+.modo .conteudos .header-conteudo .perfil.ativo {
+  background: #f2f2f2;
+}
+
+.modo .conteudos .header-conteudo .perfil.ativo .foto::after {
+  color: #2e2e2e;
+}
+
+.modo .conteudos .header-conteudo .perfil.ativo .btns button {
+  color: #2e2e2e;
+}
+
+
+.modo .conteudos .header-conteudo .titulo {
+  color: rgb(31, 30, 30)
+}
+
+.modo .conteudos .container-conteudo .conteudo {
+  color: black;
+}
+
+.modo .conteudos .container-conteudo::-webkit-scrollbar {
+  background: #aca5a5;
+}
+
+.modo .conteudos .container-conteudo::-webkit-scrollbar-thumb {
+  background: #c5c4c4;
+  box-shadow: 1px 1px 3px black;
+}
+
+/*=====================
+  RESPONSIVIDADE
+======================*/
+
+@media screen and (max-width:1024px) {
+  .navegacao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  .conteudos {
+    width: 100%;
+  }
+
+  .conteudos .header-conteudo .titulo {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 0 25px;
+  }
+
+  .conteudos .conteudo {
+    width: 80vw;
+    height: 55vw;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .navegacao {
+    width: 80%;
+  }
+}
+
+/*=====================
+    OBJETIVOS E COMENTÁRIOS
+======================*/
+
+/*
+  AJEITAR O TEMPO;
+*/

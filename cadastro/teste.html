@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/style-protect.css">
+  <link rel="shortcut icon" href="../img/Logo-Simples.png" type="image/x-icon">
+  <title>HiddenBug</title>
+</head>
+<body>
+
+  <div class="container" id="pergunta">
+    <img src="../img/Logo-Simples.png" alt="Imagem não carregada">
+    <h1>Hidden<span>Bug</span></h1>
+    <div class="container-texto">
+      <h3>Você não está logado!! Deseja fazer login ou entrar como convidado?</h3>
+    
+      <div class="btns">
+        <a href="index.php"><button  class="btn">Login</button></a>
+        <button class="btn" id="btn-convidado">Convidado</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="convidado" id="convidado" style="display: none;">
+    <form action="convidado.php" method="get">
+      <label for="nome" class = "titulo-form">Digite seu nome:</label>
+      <hr style = "width: 200px", color=#208db8>
+      
+      <input type="text" name="name" id="nome" placeholder="Digite seu nome" required class = "input-nome">
+      <input type="number" value="0" style="display:none;" name="progresso-convidado">
+
+      <input type="submit" value="Avançar" class="btn-avancar">
+    </form>
+  </div>
+  
+  <script src="../script/script-protect.js"></script>
+</body>
+</html>

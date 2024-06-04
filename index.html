@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style-index.css">
+  <link rel="stylesheet" href="style/style-cursos.css">
+  <link rel="stylesheet" href="style/style-sobre.css">
+  <!-- links roud map -->
+  <link rel="stylesheet" href="mapa-mental/style/style.css">
+  <link rel="stylesheet" href="mapa-mental/style/elements.css">
+  <link rel="stylesheet" href="mapa-mental/style/setas.css">
+  <link rel="stylesheet" href="mapa-mental/style/shadow.css">
+  
+  
+  <link rel="shortcut icon" href="img/Logo-Simples.png" type="image/x-icon">
+  <title>HiddenBug</title>
+</head>
+
+<body>
+  <!-- Cabeçalho do menu bar -->
+  
+  <header class="cabecalho">
+    <div class="logo-div">
+      <img src="img/Logo-Simples-Light.png" alt="Logo-HiddenBug" id="logo-img" onclick="home()">
+    </div>
+ 
+    <nav class="menu-bar">
+      
+      <div class="menu-links" id="btn-curso">
+        <a href="#" onclick="cursos()">Cursos</a>
+        <hr color="#1E8DBC">
+      </div>
+
+      <div class="menu-links btn-sobre" id="btn-sobre">
+        <a href="#" id="a-foco" onclick="sobre()">Sobre</a>
+        <hr color="#1E8DBC" class="line-sobre">
+      </div>
+
+      <div class="menu-links">
+        <a id="btn-login" href="cadastro/index.php" onclick="login()">Login</a>
+        <hr color="#1E8DBC" class="line-login">
+      </div>
+      
+      <div class="mark-bar"></div>
+    </nav>
+
+    <div class="btn-div">
+      <a href="cadastro/index.php">
+      <button id="btn-cadastro" onclick="login()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+          <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1 
+        1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
+          <path
+            d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0            .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z" />
+        </svg>
+        <p>Cadastre-se</p>
+      </button>
+      </a>
+    </div>
+  </header>
+  <hr class="hr-header">
+ 
+  <!--  Conteudo -->
+
+  <main class="home-page" >
+
+    <!-- Seção principal  (Vitória)-->
+
+    <section class="principal-secao">
+
+      <div class="container1">
+
+        <div class="box box1">
+
+          <div class="imagens">
+            <img src="img/php-icon.png" alt="Icon PHP" id="img1">
+
+          </div>
+
+          <div class="imagens">
+            <img src="img/react.png" alt="Icon react" id="img2">
+          </div>
+        </div>
+
+        <div class="box box2">
+
+          <div class="imagens">
+            <img src="img/script-java.png" alt="Icon Java" id="img3">
+          </div>
+
+          <div class="imagens">
+            <img src="img/python.png" alt="Icon Python" id="img4">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="conteudo-principal-secao">
+
+        <h1>Hidden</h1>
+        <hr class="hr-h1" color="#1E8DBC">
+        <h2>Bug</h2>
+
+        <div class="btn">
+          <button id="btn-comecar">
+            <a href="#" onclick="cursos()">Comece agora</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="container2">
+
+        <div class="box box3">
+
+          <div class="imagens">
+            <img src="img/sql.png" alt="Icon SQL" id="img5">
+          </div>
+
+          <div class="imagens">
+            <img src="img/github.png" alt="Icon SQL" id="img5">
+          </div>
+
+        </div>
+
+        <div class="box box4">
+
+          <div class="imagens">
+            <img src="img/html.png" alt="Icon HTML" id="img7">
+          </div>
+
+          <div class="imagens">
+            <img src="img/css.png" alt="Icon CSS" id="img8">
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+
+    <!-- Seção 2 (Catiuscia) -->
+
+    <div class="secao-2">
+      <div class="secao-2-titulo">
+        <h2>Recomendados</h2>
+      </div>
+
+      <div class="recomendados">
+        <div class="recomendado">
+          <span class="secao-2-span">HTML</span>
+          <div class="card-secao-2">
+            <img src="img/html-5.png" alt="">
+          </div>
+          <div class="butao"><a href="#" onclick = "cursos()"><button>Saiba mais</button></a></div>
+        </div>
+
+        <div class="recomendado">
+          <span class="secao-2-span">CSS</span>
+          <div class="card-secao-2">
+            <img src="img/css-3.png" alt="">
+          </div>
+          <div class="butao"><a href="#" onclick = "cursos()"><button>Saiba mais</button></a></div>
+        </div>
+
+        <div class="recomendado">
+          <span class="secao-2-span">JavaScript</span>
+          <div class="card-secao-2">
+            <img src="img/js.png" alt="">
+          </div>
+          <div class="butao"><a href="#" onclick = "cursos()"><button>Saiba mais</button></a></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--  Seçôes 3 e 4 (Jonatas) -->
+
+        <!-- Roud Map -->
+    
+    <section class="roud-map" >
+
+      
+      <div id="roud-map-box" >
+        <div class="menu-roud-map" onclick="
+            var overScroll = true;
+
+            document.querySelector('main.content').style.cssText = 'filter:blur(0);';
+
+            if(window.screen.width < 768){
+              document.querySelector('#roud-map-box').style.cssText = 'overflow:scroll;'
+            }
+
+             document.querySelector('.menu-roud-map').style.cssText = 'display:none;';
+          " >
+          <img src="mapa-mental/img/Logo-Simples-Light.png" alt="">
+          <h3><span class="blue">R</span>oud <span class="blue">M</span>ap</h3>
+
+          <button id="btn-comecar-menu" style="cursor:pointer;">Começar</button>
+        </div>
+        
+        <main class="content">
+    <!-- <a href="iframe.html">sses</a> -->
+    <div class="painel">
+
+      <span>cord Y: <span class="cord-y"> 0</span></span><br>
+      <span>cord X: <span class="cord-x"> 0</span></span>
+
+    </div>
+
+    <div class="eixo">
+      <div class="character">
+        <div class="container">
+          <div class="lados lado-1">
+            <img style="width: 60px; position: relative; left: -5px; top: 0px; transform: translateZ(10px); filter: drop-shadow(0px 0px 10px #ddd);" src="img/Logo-Simples-Light.png" alt="">
+          </div>
+          <div class="lados lado-2"></div>
+          <div class="lados lado-3"></div>
+          <div class="lados lado-4"></div>
+          <div class="lados lado-5"></div>
+          <div class="lados lado-6"></div>
+          <div class="lados sombra"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="eixo-elements">
+
+    <div class="indicador-interacao">
+        <div class="setas-interacao seta-enter">
+          <div class="part-2"></div>
+           <div class="tecla-enter">
+    
+             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.1495 13.4005C18.2541 13.4005 19.1495 12.5051 19.1495 11.4005V3.40051H21.1495V11.4005C21.1495 13.6097 19.3587 15.4005 17.1495 15.4005H6.84398L10.6286 19.1852L9.21443 20.5994L2.85046 14.2354L9.21443 7.87146L10.6286 9.28567L6.5138 13.4005H17.1495Z" fill="currentColor" /></svg>
+           </div>
+          <span>Interagir</span>
+        </div>
+        <div class="setas-interacao seta-m">
+          <div class="tecla-m">M</div>   
+          <span>Abrir Mapa</span>
+        </div>
+        <div class="setas-interacao seta-n">
+          <div class="tecla-n">N</div>
+           <span>ocultar &nbsp;Mapa</span>
+        </div>
+    </div>
+      
+    <div class="indicador-movimento">
+        <div class="setas seta-cima">
+      <div class="tecla">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.6568 8.96219L16.2393 10.3731L12.9843 7.10285L12.9706 20.7079L10.9706 20.7059L10.9843 7.13806L7.75404 10.3532L6.34314 8.93572L12.0132 3.29211L17.6568 8.96219Z" fill="currentColor" /></svg>
+      </div>
+    </div>
+        <div class="container-setas">
+      <div class="setas seta-esquerda">
+        <div class="tecla">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.3284 11.0001V13.0001L7.50011 13.0001L10.7426 16.2426L9.32842 17.6568L3.67157 12L9.32842 6.34314L10.7426 7.75735L7.49988 11.0001L20.3284 11.0001Z" fill="currentColor" /></svg>
+        </div>
+      </div>
+      <div class="setas seta-baixo">
+        <div class="tecla">
+           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.0001 3.67157L13.0001 3.67157L13.0001 16.4999L16.2426 13.2574L17.6568 14.6716L12 20.3284L6.34314 14.6716L7.75735 13.2574L11.0001 16.5001L11.0001 3.67157Z" fill="currentColor" /></svg>
+        </div>
+      </div>
+      <div class="setas seta-direita">
+        <div class="tecla">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.0378 6.34317L13.6269 7.76069L16.8972 11.0157L3.29211 11.0293L3.29413 13.0293L16.8619 13.0157L13.6467 16.2459L15.0643 17.6568L20.7079 11.9868L15.0378 6.34317Z" fill="currentColor" /></svg>
+        </div>
+      </div>
+    </div>
+        <span>Utilize as setas para o movimento</span>    
+   </div>
+
+      <div class="elements">
+        <div class="html tech">
+          <a href="https://hidden-bug.loewenstein04.repl.co/cursoindividual/html.php">
+            <img src="mapa-mental/img/html.png" alt="">
+          </a>
+          <img class="shadows" src="mapa-mental/img/shadow/html.png" alt="shadow">
+        </div>
+
+        <div class="css tech">
+          <a href="https://hidden-bug.loewenstein04.repl.co/cursoindividual/css.php">
+            <img src="mapa-mental/img/css.png" alt="">
+          </a>
+          <img class="shadows" src="mapa-mental/img/shadow/css.png" alt="shadow">
+        </div>
+
+        <div class="javascript tech">
+          <a href="https://hidden-bug.loewenstein04.repl.co/cursoindividual/cursojs.php">
+             <img src="mapa-mental/img/javascript.png" alt="">
+          </a>
+          <img class="shadows" src="mapa-mental/img/shadow/javascript.png" alt="shadow">
+
+        </div>
+
+        <div class="react tech">
+          <a href="https://hidden-bug.loewenstein04.repl.co/cursoindividual/cursogithub.php">
+          <img src="mapa-mental/img/github.png" alt="">
+          </a>
+          <img class="shadows" src="mapa-mental/img/github.png" alt="shadow">
+
+        </div>
+
+        <div class="php tech">
+          <a href="https://hidden-bug.loewenstein04.repl.co/cursoindividual/cursophp.php">
+             <img src="mapa-mental/img/php.png" alt="">
+          </a>
+          <img class="shadows" src="mapa-mental/img/shadow/php.png" alt="shadow">
+
+        </div>
+
+        <div class="mysql tech">
+          <a href="#">
+            <img src="mapa-mental/img/mysql.png" alt="">
+          </a>
+          <img class="shadows" src="mapa-mental/img/shadow/mysql.png" alt="shadow">
+
+        </div>
+
+        <div class="python tech">
+          <a href="https://hidden-bug.loewenstein04.repl.co/cursoindividual/python.php">
+            <img src="mapa-mental/img/python.png" alt="">
+          </a>
+          <img class="shadows" src="mapa-mental/img/shadow/python.png" alt="shadow">
+
+        </div>
+
+        <div class="java tech">
+          <a href="#">
+          <img src="mapa-mental/img/java.png" alt="">
+          </a>
+          <img class="shadows" src="mapa-mental/img/shadow/java.png" alt="shadow">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="map">
+
+      <audio src="audio/efeitoa.mp4"></audio>
+
+    </div>
+ 
+ <div class="mini-map ">
+      <div class="container-map">
+      <div class="marcador-cubo"></div>
+      <siv class="linguagens linguagem-1">
+        <img src="mapa-mental/img/shadow/html.png" alt="">
+      </siv>
+      <siv class="linguagens linguagem-2">
+        <img src="mapa-mental/img/shadow/css.png" alt="">
+        
+      </siv>
+      <siv class="linguagens linguagem-3">
+        <img src="mapa-mental/img/shadow/javascript.png" alt="">
+        
+      </siv>
+      <siv class="linguagens linguagem-4">
+        <img src="mapa-mental/img/github.png" alt="">
+        
+      </siv>
+      <siv class="linguagens linguagem-5">
+        <img src="mapa-mental/img/shadow/php.png" alt="">
+        
+      </siv>
+      <siv class="linguagens linguagem-6">
+        <img src="mapa-mental/img/shadow/mysql.png" alt="">
+        
+      </siv>
+      <siv class="linguagens linguagem-7">
+        <img src="mapa-mental/img/shadow/python.png" alt="">
+        
+      </siv>
+      <siv class="linguagens linguagem-8">
+        <img src="mapa-mental/img/shadow/java.png" alt="">
+      </siv>
+     
+      </div>  
+    </div>
+
+  </main>
+    
+      <button onclick="fixarCorpo()" id="btn-fixar" class="btn-fixar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+        </svg>
+      </button>
+      
+      <script>
+        function fixarCorpo() {
+          document.querySelector('#btn-fixar').classList.toggle('fixado');
+          if (document.querySelector('#btn-fixar').classList.contains('fixado')) {
+            document.body.style.cssText = "overflow:hidden;";
+          } else {
+            document.body.style.cssText = "overflow:none;";
+          }
+        }
+      </script>
+      </div>
+    </section>
+
+                 <!-- Roud Map -->
+    
+    <section class="qrcode">
+ <span class="title-roud-map">COMECE SUA JORNADA</span>
+      <div class="code">
+        <img src="img/qrcode.png" alt="QRcode">
+      </div>
+      <div class="text">
+        <h3>NOSSAS PLATAFORMAS</h3>
+        <hr>
+        <p>Acesse nossa plataforma pelo QRcode para ter experiências em qualquer lugar!</p>
+      </div>
+    </section>
+  </main>
+
+  <main class="cursos-page" style="display: none;">
+    
+    <!-- FRONT-END (CATIUSCIA) -->
+
+    <div class="titulo-front-end">
+      <h3>Front-End<hr></h3>
+    </div>
+
+    <section class="front-end">
+      <div class="card-front-end">
+        <img src="img/html-5.png" alt="Logo Html">
+
+        <div class="overlay-front">
+
+        <h3 class="h3-over-html">HTML</h3>
+          
+          <p>HTML (HyperText Markup Language) é uma linguagem de marcação utilizada para criar páginas web..</p>
+        </div>
+
+        <button><a href="cursoindividual/html.php" style="text-decoration: none; color:#f2f2f2; padding:10px 70px; " class="html-button">Comece já</a></button>
+      </div>
+      <div class="card-front-end">
+        <img src="img/css-3.png" alt="Logo CSS">
+        <div class="overlay-front">
+
+        <h3 class="h3-over-css">CSS</h3>
+
+          <p>
+CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para definir a aparência e o layout de elementos HTML em páginas web.</p>
+        </div>
+        <button><a href="cursoindividual/css.php" style="text-decoration: none; color:#f2f2f2; padding:10px 70px; " class="css-button">Comece já</a></button>
+      </div>
+      <div class="card-front-end">
+        <img src="img/js.png" alt="">
+        <div class="overlay-front">
+
+        <h3 class="h3-over-js">JavaScript</h3>
+          
+          <p>JavaScript é uma linguagem de programação amplamente utilizada para adicionar interatividade e funcionalidade dinâmica às páginas web.
+Ela permite a manipulação de elementos HTML, o processamento de dados, a validação de formulários e a criação de efeitos visuais.</p>
+        </div>
+       <button><a href="cursoindividual/cursojs.php" style="color: #f2f2f2; text-decoration: none;
+               padding: 10px 70px ;">Comece já</a></button>
+      </div>
+    </section>
+
+    
+    <!--  Seção Back-end  ( JOnatas ) -->
+
+    <section class="secao-back-end">
+      <span>
+        <hr>Back-end
+      </span>
+      <div class="container-back-end">
+       
+
+        <div class="cursos curso-2">
+          <div class="img-curso">
+            <img src="img/cursos/php.png" alt="">
+          </div>
+
+          <div class="texto-curso">
+            <h3>PHP</h3>
+            <p>PHP é uma linguagem de programação voltada para o desenvolvimento de aplicações para a web e para criar sites, favorecendo a conexão entre os servidores e a interface do usuário, e o aprendizado simples facilitam muito o caminho de profissionais.</p>
+          </div>
+
+          <div class="button-redirect">
+            <button>
+              <a href="cursoindividual/cursophp.php">Comece já</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="cursos curso-3">
+          <div class="img-curso">
+            <img src="img/cursos/python.png" alt="">
+          </div>
+
+          <div class="texto-curso">
+            <h3>Python</h3>
+            <p>Conhecida por ser fácil de aprender e de utilizar, esta é uma linguagem simples e com boa legibilidade. Além disso, ela possui diversas aplicações, que vão desde páginas da web, passando por jogos até a dispositivos de Inteligência Artificial (IA).</p>
+          </div>
+
+          <div class="button-redirect">
+            <button>
+              <a href="cursoindividual/python.php">Comece já</a>
+            </button>
+          </div>
+        </div> 
+        <div class="cursos curso-1">
+          <div class="img-curso">
+            <img src="img/cursos/java.png" alt="">
+          </div>
+
+          <div class="texto-curso">
+            <h3>Java</h3>
+            <p>Java é uma linguagem de pro&shy;gramação amplamente usada para codi&shy;ficar aplicações Web. Ela tem sido uma esco&shy;lha popular entre os desenvol&shy;vedores há mais de duas décadas, com milhões de aplicações Java em uso hoje.</p>
+          </div>
+
+          <div class="button-redirect">
+            <button>
+              <a href="cadastro/index.php" style="text-align:center; padding:0;">Registre seu interesse</a>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Seção Banco de Dados (Vitória)  -->
+    
+    <h3 class="titulo-cursos">| Banco de Dados</h3>
+    <section class="secao-bd">
+
+      <div class="conteudo-bd">
+
+        <div class="card-bd">
+          <img src="img/MySQL-Logo.png" alt="MySQL-Logo">
+
+          <div class="overlay">
+            <h3 class="tituloCard">MySQL</h3>
+            <p>O MySQL é um sistema de gerenciamento de banco de dados relacional (RDBMS) amplamente utilizado em
+              aplicativos web e empresariais. Ele fornece uma maneira eficiente de armazenar, organizar e acessar
+              grandes quantidades de dados. O MySQL é um software de código aberto e oferece recursos robustos para
+              lidar com diversas tarefas relacionadas a bancos de dados.</p>
+          </div>
+        </div>
+
+        <div class="card-bd">
+
+          <div class="overlay">
+            <p>Em progresso...</p>
+          </div>
+        </div>
+
+        <div class="card-bd">
+
+          <div class="overlay">
+            <p>Em progresso...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div-button">
+        <div><a href="cursoindividual/cursosql.php"><button class="button-comece">Comece já</button></a></div>
+
+        <div><button class="button-saibamais">Em Breve</button></div>
+
+        <div><button class="button-saibamais">Em Breve</button></div>
+      </div>
+    </section>
+
+    <!-- Seção Framework (André) -->
+
+    <section class="secao-frame">
+      <h1>Framework
+        <hr>
+      </h1>
+      <div class="container-frame">
+        <div class="container-cursos curso-1">
+          <div class="cursos ">
+            <div class="foto">
+              <img src="https://getbootstrap.com.br/docs/4.1/assets/img/bootstrap-stack.png" alt="">
+            </div>
+
+            <div class="texto">
+              <h3>Bootstrap</h3>
+              <p>O Bootstrap é uma ferramenta gratuita para desenvolvimento HTML, CSS e JS. Crie protótipos rápidamente
+                ou aplicações completas com vários esquemas personalizáveis.</p>
+            </div>
+          </div>
+          <div class="container-titulo-button">
+            <a href="cadastro/index.php"><button>Registre seu interesse</button></a>
+          </div>
+        </div>
+
+        <div class="container-cursos">
+          <div class="cursos curso-2">
+            <div class="foto foto-react">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+                alt="">
+            </div>
+            <div class="texto">
+              <h3>React</h3>
+              <p>React, também conhecido como React JS, é uma popular biblioteca JavaScript de código aberto para criar
+                aplicativos da web rápidos e escaláveis . É essencialmente uma estrutura JavaScript front-end que
+                permite criar interfaces de usuário interativas de maneira rápida e fácil.</p>
+            </div>
+          </div>
+          <div class="container-titulo-button">
+            <a href="cadastro/index.php"><button>Registre seu interesse</button></a>
+          </div>
+        </div>
+
+        <div class="container-cursos">
+          <div class="cursos curso-3">
+            <div class="foto">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png"
+                alt="">
+            </div>
+            <div class="texto">
+              <h3>Angular</h3>
+              <p>Angular é uma plataforma de aplicações web open source e front-end baseado em TypeScript liderado pela
+                Equipe Angular do Google e por uma comunidade de indivíduos e corporações. Angular é uma reescrita
+                completa do AngularJS, feito pela mesma equipe que o construiu.</p>
+            </div>
+          </div>
+          <div class="container-titulo-button">
+            <a href="cadastro/index.php"><button>Registre seu interesse</button></a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+ <!--  Seção Ferramentas  ( JOnatas ) -->
+
+    <section class="secao-back-end"  style="margin: -100px 0 50px 0;">
+      <span id="secao-ajuste-back" style="width:300px; margin-left:60px; flex-direction:row;">
+        <hr>Ferramentas
+      </span>
+
+      <script>
+
+        setInterval(()=>{
+            if(window.screen.width < 1024){
+              document.querySelector('#secao-ajuste-back').style.cssText = "margin-left:0px;"
+            }else{
+              document.querySelector('#secao-ajuste-back').style.cssText = "margin-left: 70px; width:300px; flex-direction:row;"
+            }
+        },10);
+      </script>
+      <div class="container-back-end">
+        <div class="cursos curso-1">
+          <div class="img-curso">
+            <img src="mapa-mental/img/github.png" style="scale:.8;" alt="">
+          </div>
+
+          <div class="texto-curso">
+            <h3>GitHub</h3>
+            <p>GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.</p>
+          </div>
+
+          <div class="button-redirect">
+            <button>
+              <a href="cursoindividual/cursogithub.php">Comece já</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="cursos curso-2">
+          <div class="img-curso">
+            <img src="img/git.png" style="scale:.8;" alt="">
+          </div>
+
+          <div class="texto-curso">
+            <h3>Git</h3></h3>
+            <p>Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.</p>
+          </div>
+
+          <div class="button-redirect">
+            <button>
+                <a href="cadastro/index.php" style="text-align:center; padding:0;">Registre seu interesse</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="cursos curso-3">
+          <div class="img-curso">
+            <img src="img/cursos/pytho.png" alt="">
+          </div>
+
+          <div class="texto-curso">
+            <p style="text-align:center; line-height: 300px;">Em progresso...</p>
+          </div>
+
+          <div class="button-redirect">
+            <button>
+              <a href="cursoindividual/python.php">Em breve</a>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <main class="sobre-page" style="display: none;">
+
+    <!-- Carrosel Sobre -->
+  
+  <section class="container-sobre">
+
+      <div class="buttons">
+        <svg id="seta-esquerda" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16.2426 6.34317L14.8284 4.92896L7.75739 12L14.8285 19.0711L16.2427 17.6569L10.5858 12L16.2426 6.34317Z"
+            fill="currentColor" />
+        </svg>
+        
+
+        <svg id="seta-direita" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.5858 6.34317L12 4.92896L19.0711 12L12 19.0711L10.5858 17.6569L16.2427 12L10.5858 6.34317Z"
+            fill="currentColor" />
+        </svg>
+      </div>
+
+      <div class="container-backgrounds">
+        <div class="backgrounds back-1">
+          <img src="img/imgsobre/megafone.png" alt="">
+        </div>
+
+        <div class="backgrounds back-2">
+          <img src="img/imgsobre/computador.png" alt="">
+        </div>
+
+        <div class="backgrounds back-3">
+          <img src="img/imgsobre/cerebro.png" alt="">
+        </div>
+
+      </div>
+
+
+
+      <div id="box-comunidade-replica" class="box-sobre box-comunidade box-1">
+        <hr class="line-principal">
+        <div class="texto-container">
+          <span>Faça parte</span>
+          <h3>Da nossa comunidade </h3>
+          <p>A comunidade da HiddenBug está crescendo cada vez mais, venha <span>você</span> compartilhar suas experiências.</p>
+          <p class="texto-m">Venha você compartilhar suas experiências.</p>
+          <button><a href="https://twitter.com/Hidden_Bug_" style="text-decoration:none; color:#f2f2f2;">Saiba Mais</a> </button>
+        </div>
+
+      </div>
+
+      <div id="box-suporte-replica" class="box-sobre box-suporte box-2">
+
+        <hr class="line-principal">
+        <div class="texto-container">
+          <span>Precisa de ajuda?</span>
+          <h3>Solicite atendimento</h3>
+          <p>A equipe de atendimentos quer a melhor experiências para você. <span>Bugou?</span> <span>Chamou</span>. <span>Consertou!</span></p>
+          <p class="texto-m">Bugou? Chamou. Consertou!</p>   
+          <button><a href="suporte/index.html" style="text-decoration:none; color:#f2f2f2;">Saiba Mais</a> </button>
+        </div>
+      </div>
+      
+      <div id="box-pitch" class="box-sobre box-pitch box-3"> 
+        <hr class="line-principal">
+        <div class="texto-container">
+          <span>Seja bem vindo(a)</span>
+          <h3> Venha nos conhecer</h3>
+          <p>A HiddenBug se tornou referência no ensino de programação, capacitando e motivando novos programadores a dar seus primeiros passos. </p>
+           <p class="texto-m">HiddenBug se tornou referência</p>
+        </div>
+
+
+
+      </div>
+
+      <div id="box-comunidade" class="box-sobre box-comunidade box-4">
+
+        <hr class="line-principal">
+        <div class="texto-container">
+          <span>Faça parte</span>
+          <h3>Da nossa comunidade </h3>
+          <p>A comunidade da HiddenBug está crescendo cada vez mais, venha <span>você</span> compartilhar suas experiências.</p>
+          <p class="texto-m">Venha você compartilhar suas experiências.</p>      
+          <button><a href="https://twitter.com/Hidden_Bug_"  style="text-decoration:none; color:#f2f2f2;">Saiba Mais</a> </button>
+        </div>
+
+      </div>
+
+      <div id="box-suporte" class="box-sobre box-suporte box-5">
+        <hr class="line-principal">
+        <div class="texto-container">
+          <span>Precisa de ajuda?</span>
+          <h3>Solicite atendimento</h3>
+          <p>A equipe de atendimentos quer a melhor experiências para você. <span>Bugou?</span> <span>Chamou</span>. <span>Consertou!</span></p>
+          <p class="texto-m">Bugou? Chamou. Consertou!</p>    
+          <button><a href="suporte/index.html" style="text-decoration:none; color:#f2f2f2;">Saiba Mais</a> </button>
+        </div>
+      </div>
+
+      <div id="box-pitch-replica" class="box-sobre box-pitch box-6">
+
+          <hr class="line-principal">
+        <div class="texto-container">
+          <span>Seja bem-vindo</span>
+          <h3>Venha nos conhecer</h3>
+          <p>A HiddenBug se tornou referência no ensino de programação, capacitando e motivando novos programadores a dar seus primeiros passos. </p>
+          <p class="texto-m">HiddenBug se tornou referência</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-------Seção 2-------->
+
+  <section class="secao-2-sobre">
+
+    <div class="container-secao2">
+
+      <div class="cabecalho-sobre2">
+        
+        <div class="titulos-secao2">
+
+          <div class="linha-vertical"></div>
+
+          <div>
+            <h2 class="titulo-menor">Tudo tem um</h2>
+            <h1 class="titulo-maior">COMEÇO</h1>
+          </div>
+            
+        </div>
+
+        <div class="container-img-secao2">
+          <img class="fotoGrupo" src="../img/fotoGrupo1.jpeg">
+        </div>
+            
+      </div>
+
+      <div class="container-texto-secao2">
+        
+        <p>Os estudantes André, Catiuscia, Jonatas e Vitória criaram a HiddenBug, uma plataforma de ensino para
+          programadores iniciantes, como parte de seu TCC. Eles queriam facilitar o aprendizado de programação,
+          oferecendo lições interativas e um ambiente de comunidade vibrante. Com uma equipe de desenvolvedores
+          talentosos, eles construiram a plataforma, com aulas passo a passo, exercícios práticos e fóruns de discussão.
+          O lançamento foi um sucesso, atraindo uma comunidade crescente de alunos. A HiddenBug se tornou uma referência
+          no ensino de programação, capacitando e motivando novos programadores a dar seus primeiros passos com
+          confiança. </p>
+      </div>
+    </div>
+  </section>
+
+    <!-- SEÇÃO 2 (CATIUSCIA) -->
+  <section class="secao-3">
+    <div class="container-secao3">
+      <div class="container-secao3-card">
+        <div class="front">
+          <span class="span4">VISÃO</span>
+          <span class="span1">visão</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+</svg>
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-gear-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+          </svg> -->
+          <h4>Visão</h4>
+        </div>
+        <div class="back">
+          <p>A visão da HiddenBug é ser reconhecido como o principal destino para o aprendizado de programação, impulsionando a próxima geração de talentos em tecnologia por meio de uma abordagem inovadora, acessível e engajadora.</p>
+        </div>
+      </div>
+
+      <div class="container-secao3-card">
+        <div class="front">
+          <span class="span2">MISSÃO</span>
+          <span class="span6">missão</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
+  <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z"/>
+</svg>
+          
+          <h4>Missão</h4>  
+        </div>
+        <div class="back">
+          <p>A missão da HiddenBug é capacitar e inspirar aspirantes a programadores, oferecendo uma plataforma de ensino de alta qualidade, que promova o aprendizado prático, interativo e colaborativo, preparando-os para enfrentar os desafios do mundo da programação.</p>
+        </div>
+      </div>
+
+      <div class="container-secao3-card">
+        <div class="front" onclick="aparecer">
+          <span class="span3">Valores</span>
+          <span class="span5">valores</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-gear-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+          </svg>
+          <h4>Valores</h4>
+        </div>
+        <div class="back">
+          <p>Os valores da HiddenBug são: acessibilidade, interatividade e comunidade, proporcionando um ambiente acolhedor e eficaz para o aprendizado de programação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Footer -->
+    
+  <footer>
+        <div class="container-footer-titulo">
+            <div class="footer-titulo">
+                <h3>Hidden<span>Bug</span></h3>
+            </div>
+<!--  -->
+            <nav class="footer-nav">
+                <li onclick="home()">Home</li>
+                <li onclick="cursos()">Cursos</li>
+                <li onclick="sobre()">Sobre</li>
+                <a href="cadastro/index.php" onclick="login()"><li>Cadastre-se</li></a>
+                <hr class="line-footer">
+            </nav>
+        </div>
+
+        <div class="container-footer-texto">
+            <div class="footer-texto">
+                <p>HiddenBug é uma plataforma abrangente e eficaz para aqueles que buscam aprimorar seus conhecimentos e
+                    habilidades em tecnologia.</p>
+
+                <p>Com seu conteúdo de alta qualidade, exercícios práticos e comunidade ativa, é uma opção valiosa para
+                    quem deseja se destacar na área de tecnologia.</p>
+            </div>
+
+            <div class="footer-contatos">
+                <div class="fundo-svg">
+                    <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fhidden.bugg%2F%3Figshid%3DOGQ5ZDC2oDk2ZA%253D%253D" target="_blank">
+                        <svg class="contato-svg insta" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="fundo-svg">
+                    <a href="https://twitter.com/Hidden_Bug_" target="_blank">
+                        <svg class="contato-svg twitter" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="fundo-svg">
+                    <a href="https://criarmeulink.com.br/u/1687827019" target="_blank">
+                        <svg class="email" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                            <path
+                                d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="fim">Copyright&copy; 2023 | Todos os direitos reservados</p>
+    </footer>
+
+  <script src="script/script.js"></script>
+  <script src="script/script-login.js"></script>
+  <script src="script/script-sobre.js"></script>
+  <script src="mapa-mental/script/move.js"></script>
+  <script src="mapa-mental/script/script.js"></script>
+  <script src="mapa-mental/script/scale.js"></script>
+</body>
+
+</html>

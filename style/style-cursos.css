@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+
+main.cursos-page {
+  width: 100%;
+}
+
+body{
+  overflow-x: hidden ;
+}
+
+/*==========================
+   Curos Back-end (Jonatas)
+=========================== */
+
+section.secao-back-end {
+  width: 100%;
+  margin-top:-100px;
+  padding: 100px 0% 80px 0%;
+  display: flex;
+  gap: 30px;
+  align-items: start;
+  flex-direction: column;
+  color: #f2f2f2;
+  font-family: 'Merriweather Sans', sans-serif;
+  margin-bottom: -100px;
+}
+
+div.container-back-end {
+  width: 100vw;
+  height: 400px;
+  padding: 0;
+  gap: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  overflow-x: scroll ;
+  flex-shrink: 0;
+}
+
+div.container-back-end::-webkit-scrollbar{
+   display:none;
+}
+
+div.container-back-end::-webkit-scrollbar-thumb{
+  display: none;
+}
+
+div.cursos {
+  width: 300px;
+  height: 20em;
+  position: relative;
+  scroll-snap-align: start;
+}
+
+.texto-curso:hover{
+  opacity: 95%;
+}
+
+div.img-curso {
+  width: 100%;
+  height: 319px;
+  border-radius: 20px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 10px 10px 6px #eff, 10px 10px 6px #11111199;
+}
+
+div.img-curso img {
+  width: 90%;
+  /* filter: drop-shadow(10px 10px 6px #11111199); */
+}
+div.curso-2 img{
+  position: relative;
+  top:-10px;
+}
+div.curso-3 img {
+  width: 70%;
+  position: relative;
+  top:10px;
+  left:10px;
+}
+
+div.texto-curso {
+  padding: 5%;
+  width:300px;
+  height: 319px;
+  position: absolute;
+  left: 0;
+  top:0;
+  color:#f2f2f2;
+  background: #1E8DBC;
+  /* box-shadow: inset 6px 6px 10px #82a5f7,inset -4px -4px 10px #0d285e; */
+  border-radius: 20px;
+  opacity:0;
+  transition:.5s;
+  cursor: default;
+  /* text-shadow: 0px 0px 4px #222; */
+}
+
+section.secao-back-end span {
+  font-size: 2.5rem;
+  padding-right: 2em;
+  padding-bottom:40px;
+  font-weight: 500;
+  align-items: center;
+  display: flex;
+  flex-direction:row-reverse;
+  gap: 10px;
+  width:100%;
+  color: #f2f2f2;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+section.secao-back-end h3 {
+  font-size: 1.6rem;
+  padding-left: 15px;
+  
+}
+
+section.secao-back-end hr {
+  width: 1.7px;
+  height: 32px;
+  border: none;
+  background: #f2f2f2;
+}
+
+section.secao-back-end p {
+  text-align: justify;
+  text-indent: 15px;
+  padding-top: 10px;
+  color: #f2f2f2;
+  font-size: 1.1rem;
+}
+
+div.button-redirect {
+  padding: 5% 0;
+}
+
+div.button-redirect button {
+  background: #1E8DBC;
+  border: none;
+  width: 300px;
+  height: 50px;
+  border-radius: 40px;
+  transition: .8s;
+}
+
+div.button-redirect button:hover {
+  background: #145876;
+}
+
+div.button-redirect a {
+  text-decoration: none;
+  color: #f2f2f2;
+  /* font-weight: bold; */
+  font-size: 1.05rem;
+  padding: 15px 90px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+/*===============================
+  Seção Banco de Dados (Vitória)
+================================*/
+
+
+.secao-bd{
+  width: 100vw;
+  overflow-x: scroll ; 
+
+}
+
+.secao-bd::-webkit-scrollbar{
+   display:none;
+}
+
+.secao-bd::-webkit-scrollbar-thumb{
+  display: none;
+}
+
+
+.secao-bd .conteudo-bd {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 20px;
+}
+
+h3.titulo-cursos {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: 2.5em;
+  color: #f2f2f2;
+  margin: 2em 0 2em 64px;
+}
+
+.card-bd {
+  background-color: white;
+  height: 20em;
+  width: 300px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: inset 20px 10px 6px #eff, 10px 10px 6px #11111199 ;
+  flex-shrink: 0;
+}
+
+.conteudo-bd  img {
+  width: 100%;
+  margin-top: 3em;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s;
+  background-color: #208db8;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  color: white;
+  font-family: 'Merriweather Sans', sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-bd:hover .overlay {
+  opacity: 0.9;
+  transition: 0.5s;
+  cursor: default;
+}
+
+.card-bd p {
+  font-size: 1rem;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-align: justify;
+  text-indent: 15px;
+  margin: 0em 1em 0em 1em;
+}
+
+.tituloCard {
+  color: white;
+  font-size: 25px;
+  width: 100%;
+  margin: 0em 0em 1em 1em;
+}
+
+.div-button {
+  display: flex;
+  justify-content:space-evenly;
+  gap: 20px
+}
+
+.div-button a{
+    position: relative;
+}
+.link-1{
+  right:10px;
+}
+
+.link-3{
+  left:10px;
+}
+
+.button-saibamais, .button-comece {
+  border: none;
+  height: 50px;
+  border-radius: 30px;
+  margin: 1em 0 0 0;
+  background-color: #208db8;
+  color: white;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.1em;
+  transition: 0.7s;
+  margin-bottom: 100px;
+  width: 300px;
+}
+
+.button-comece {
+  cursor: pointer;
+}
+
+.button-comece:hover {
+  background: #145876;
+}
+
+/* SEÇÃ0 FRONT-END (CATIUSCIA) */
+
+section.front-end {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 400px;
+  gap: 20px;
+  margin-bottom: 50px;
+  overflow-x: scroll;
+}
+
+.front-end::-webkit-scrollbar{
+   display:none;
+}
+
+.front-end::-webkit-scrollbar-thumb{
+  display: none;
+}
+
+div.titulo-front-end {
+  margin-right: 7%;
+  position:relative;
+}
+
+div.titulo-front-end h3 {
+  display: flex;
+  font-size: 2.5em;
+  align-items:center;
+  flex-direction:row-reverse;
+  margin-left:80px;
+  gap:10px;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  color: #f2f2f2;
+}
+
+div.titulo-front-end hr{
+  width:1px;
+  background:#f2f2f2;
+  height: 38px;
+}
+
+
+div.card-front-end {
+  background: #f2f2f2;
+  width: 300px;
+  height: 20em;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  font-family: 'Merriweather Sans';
+  box-shadow: inset 10px 10px 6px #eff, 10px 10px 6px #11111199;
+
+}
+
+div.card-front-end img {
+  margin-top: 10%;
+  width: 70%;
+}
+
+div.card-front-end button {
+  position: relative;
+  top: 23%;
+  font-size: 1em;
+  width: 300px;
+  color: #f2f2f2;
+  background-color: #208db8;
+  border: none;
+  border-radius: 30px;
+  height: 50px;
+  font-family: 'Merriweather Sans';
+  font-size: 1.1em;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.overlay-front {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s;
+  background-color: #208db8;
+  color: white;
+  height: 100%;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.overlay-front p {
+  text-indent: 15px;
+  font-size: 1rem;
+  margin-top: 4%;
+}
+
+.overlay-front h3 {
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.overlay-front h3.h3-over-html {
+  font-size: 1.6rem;
+  padding-right: 200px;
+  color: #f2f2f2;
+  display: flex;
+  font-family: "Merriweather Sans";
+}
+
+.overlay-front h3.h3-over-css {
+  font-size: 1.6rem;
+  padding-right: 220px;
+  color: #f2f2f2;
+  display: flex;
+  font-family: "Merriweather Sans";
+}
+
+.overlay-front h3.h3-over-js {
+  font-size: 1.6rem;
+  padding-right: 150px;
+  color: #f2f2f2;
+  display: flex;
+  font-family: "Merriweather Sans";
+}
+
+.overlay-front:hover  {
+  opacity: 0.9;
+  transition: .5s;
+  cursor: default;
+}
+
+div.card-front-end button:hover {
+  background: #1c5f7b;
+}
+
+/*===================
+    SEÇÃO FRAMEWORK(André)
+====================*/
+
+.secao-frame {
+  width: 100%;
+  position: relative;
+  font-family: 'Merriweather Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+.secao-frame h1 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.secao-frame h1:nth-child(1) {
+  font-size: 2.7rem;
+  text-align: end;
+  margin-right: 90px;
+  color: #f2f2f2;
+  font-weight: 500;
+}
+
+.secao-frame hr {
+  rotate: 90deg;
+  width: 3rem;
+  position: absolute;
+  top: 5px;
+  right: 55px;
+  transform: translate(50%, 0);
+}
+
+.secao-frame .container-frame {
+  width: 100vw;
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3%; 
+  overflow-x: scroll;
+}
+
+.container-frame::-webkit-scrollbar{
+   display:none;
+}
+
+.container-frame::-webkit-scrollbar-thumb{
+  display: none;
+}
+
+.container-frame .cursos {
+  height: 20em;
+  width: 300px;
+  background: #f2f2f2;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container-frame .cursos .foto {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-frame .cursos .foto img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-frame .cursos .foto-react img {
+  width: 100%;
+  height: 85%;
+}
+
+.container-frame .cursos .texto {
+  width: 100%;
+  height: 100%;
+  background: #208db8;
+  color: #f2f2f2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: .7s;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  cursor: default;
+}
+
+.container-frame .cursos .texto h3 {
+  width: 100%;
+  text-align: start;
+  font-family: 'Merriweather Sans', sans-serif;
+  margin: 0 15px .5em 0;
+  font-size: 25px;
+}
+
+.container-frame:hover .cursos .texto {
+  opacity: .9;
+}
+
+.container-frame:hover .cursos .texto:not(:hover) {
+  opacity: 0;
+}
+
+.container-frame .cursos .texto p {
+  text-indent: 15px;
+  cursor: default;
+}
+
+.container-frame .container-titulo-button {
+  height: 30%;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 2.3rem;
+  margin-top: 20px;
+}
+
+.container-frame .container-titulo-button button {
+  height: 50px;
+  width: 300px;
+  font-size: 1.2rem;
+  background: #208db8;
+  border: none;
+  color: #f2f2f2;
+  border-radius: 30px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.container-frame .container-titulo-button button:hover {
+  background: #145876;
+}
+
+
+@media (max-width:950px){
+   section.secao-back-end span{
+     margin-top:20px;
+     font-size: 2rem;
+     padding:2em;
+     flex-direction:row;
+     justify-content:start;
+     margin:-50px 0 ;
+  }
+  
+  div.container-back-end {
+    justify-content:flex-start;
+    padding: 0 80px ;
+ 
+  }
+
+  
+  .secao-bd .conteudo-bd {
+    justify-content:flex-start;
+    padding: 0  80px;
+
+  }
+
+
+  
+  .div-button {
+    justify-content:flex-start;
+    padding: 0  80px;
+  }
+
+  section.front-end {
+    height:480px;
+    justify-content:flex-start;
+    padding: 0 80px;  
+    margin-bottom:-60px;
+  }
+
+    div.titulo-front-end {
+      margin-top:100px;
+            
+    }
+
+   div.card-front-end {
+    margin-top:50px;
+  }
+
+  div.titulo-front-end h3 {
+    margin-top:150px;
+    display:flex;
+    flex-direction:row-reverse;
+    width:200px;
+    font-size:2rem;
+    position:absolute;
+    margin:20px 0;
+    left:64px;
+    padding:0;
+    top: calc(50% - 40px);
+  }
+
+    div.titulo-front-end hr{
+      height:30px ; 
+    }
+
+    .secao-frame .container-frame {
+    justify-content:flex-start;
+    padding: 0 80px ;   
+  }
+
+  .secao-frame h1:nth-child(1) {
+    padding-left:85px;
+    text-align: start;
+    font-size: 2.3rem;
+    margin:-30px 0;
+  }
+
+  .secao-frame hr {
+    top: -24px;
+    left:54px;
+    width:32px;
+    background:#f2f2f2;
+    border:none;
+    height:1px;
+  }
+
+
+}
+
+@media(max-width: 450px){
+  
+  section.secao-back-end span{
+     margin-top:20px;
+     font-size: 2rem;
+     padding:2em;
+     flex-direction:row;
+     justify-content:start;
+     margin:-50px 0 ;
+  }
+
+
+
+  div.container-back-end {
+    justify-content:flex-start;
+    padding: 0  calc(50vw - 150px) ;
+    gap:0px;   
+  }
+
+  div.cursos{
+     scale:.9;
+  }
+
+  .secao-bd .conteudo-bd {
+    justify-content:flex-start;
+    padding: 0  calc(50vw - 150px);
+    gap:0px; 
+  }
+
+  .card-bd {
+    scale: .9;
+  }
+
+  .button-saibamais, .button-comece{
+    scale:.9;
+  }
+
+  .div-button {
+    justify-content:flex-start;
+    padding: 0  calc(50vw - 150px);
+    gap:0px; 
+  }
+  
+
+  .link-1{
+    right:0px;
+  }
+
+  .link-3{
+    left:0px;
+  }
+
+  h3.titulo-cursos {
+
+     font-size: 2rem;
+  }
+
+  section.front-end {
+    height:480px;
+    justify-content:flex-start;
+    padding: 0  calc(50vw - 150px) ;
+    gap:0px;   
+  }
+
+    div.titulo-front-end {
+      margin-top:100px;
+    }
+
+  div.card-front-end {
+    margin-top:50px;
+    scale:.9;
+  }
+
+  div.titulo-front-end h3 {
+    margin-top:150px;
+    display:flex;
+    flex-direction:row-reverse;
+    width:200px;
+    font-size:2rem;
+    position:absolute;
+    margin:20px 0;
+    left:64px;
+    padding:0;
+    top: calc(50% - 40px);
+  }
+
+    div.titulo-front-end hr{
+      height:30px ; 
+    }
+
+  .secao-frame .container-frame {
+    justify-content:flex-start;
+    padding: 0 calc(50vw - 150px) ;
+    gap:0px;   
+  }
+
+  .container-frame .container-titulo-button{
+    scale:.9;
+  }
+
+  .secao-frame h1:nth-child(1) {
+    padding-left:85px;
+    text-align: start;
+    font-size: 2.3rem;
+    margin:-30px 0;
+  }
+
+  .secao-frame hr {
+    top: -24px;
+    left:54px;
+    width:32px;
+    background:#f2f2f2;
+    border:none;
+    height:1px;
+  }
+
+
+  .seila #secao-ajuste-back{
+    margin-left:-200px;
+  }
+
+}
